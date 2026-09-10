@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+  --color-suki-black: #111111;
+  --color-suki-dark: #171717;
+  --color-suki-card: #1c1c1e;
+  --color-suki-border: #2c2c2e;
+  --color-suki-red: #D32F2F;
+  --color-suki-red-glow: rgba(211, 47, 47, 0.35);
+  --color-suki-magenta: #FF2E93;
+  --color-suki-white: #F5F5F5;
+  --color-suki-muted: #A1A1AA;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #111111;
+  color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+/* Subtle manga halftone pattern */
+.manga-dots {
+  background-image: radial-gradient(#27272a 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.manga-lines {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.02) 10px, rgba(255, 255, 255, 0.02) 20px);
+}
+
+/* Custom scrollbar for menu tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
