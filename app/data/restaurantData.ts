@@ -1,4 +1,4 @@
-import { HighlightCard, MenuCategory, ReviewItem } from '../types';
+import { HighlightCard, MenuCategory, ReviewItem } from '../../types';
 
 export const RESTAURANT_INFO = {
   name: 'SUKI RAMEN·SUSHI',
